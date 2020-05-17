@@ -1,0 +1,158 @@
+:root {
+    /* Primary colors */
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+  
+    /* Accent */
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+    /* Neutral */
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+  
+    /* Shadows */
+    --east-bay: #465186;
+  
+    /* Text */
+    --storm-gray: #6D6D7E;
+  }
+
+header {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif;
+  color: white
+}
+
+.dark-mode {
+  color: #989dc0;
+  font-size: 15px;
+}
+
+h4 {
+  color: #989dc0;
+}
+
+.bg-color {
+  background-color: #1d2029
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 20%;
+}
+
+.margin-botton-5 {
+  margin-bottom: 5px;
+}
+
+.margin-top-5 {
+  margin-top: 5px;
+}
+
+.margin-left-448 {
+  margin-left: 448px;
+}
+
+.margin-top-52 {
+  margin-top: 52px;
+}
+
+.color-numbers {
+  color: white;
+}
+
+.size-section1 {
+  height: 240px;
+  width: 17.5%;
+  margin-right: 2%;
+}
+
+.size-section2 {
+  height: 150px;
+  width: 17.5%;
+  margin-right: 2%;
+  margin-bottom: 37px;
+}
+
+.bg-boxes {
+  background-color: #252c43
+}
+
+.overview-today-size {
+  height: 36px;
+  margin-top: 37px;
+  color: white;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
